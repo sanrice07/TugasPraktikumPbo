@@ -4,10 +4,13 @@
  */
 package Tugas8PraktikumPbo;
 
-/**
- *
- * @author ikhsa
- */
 public class PbR {
-    
+    int[] angka = {6,12,24,48,96};
+}
+//Past-by-Reference
+class Proses {
+    void tampil(PbR d) {
+        for(int n : d.angka)
+            System.out.print(n + " ");
+    }
 }

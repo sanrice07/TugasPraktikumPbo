@@ -4,10 +4,28 @@
  */
 package Tugas8PraktikumPbo;
 
-/**
- *
- * @author ikhsa
- */
 public class NilaiRata2 {
-    
+    int[] data;
+
+    NilaiRata2(int... nilai) {
+        this.data = nilai;
+    }
+
+    RataRata hitung() {
+        int total = 0;
+        for(int n : data) total += n;
+        return new RataRata(total / data.length);
+    }
+}
+
+class RataRata {
+    int nilai;
+
+    RataRata(int nilai) {
+        this.nilai = nilai;
+    }
+
+    void tampil() {
+        System.out.println("Rata-rata = " + nilai);
+    }
 }

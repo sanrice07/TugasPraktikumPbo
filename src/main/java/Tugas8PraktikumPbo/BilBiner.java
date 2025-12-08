@@ -4,10 +4,15 @@
  */
 package Tugas8PraktikumPbo;
 
-/**
- *
- * @author ikhsa
- */
+
 public class BilBiner {
-    
+    int angka;
+
+    BilBiner(int angka) {
+        this.angka = angka;
+    }
+
+    String konversi() {
+        return Integer.toBinaryString(angka);
+    }
 }

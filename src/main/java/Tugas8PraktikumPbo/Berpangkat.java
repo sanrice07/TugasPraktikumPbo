@@ -4,10 +4,20 @@
  */
 package Tugas8PraktikumPbo;
 
-/**
- *
- * @author ikhsa
- */
+
 public class Berpangkat {
-    
+    int angka, pangkat;
+
+    Berpangkat(int angka, int berpangkat) {
+        this.angka = angka;
+        this.pangkat = berpangkat;
+    }
+
+    int hitung() {
+        int hasil = 1;
+        for(int i = 0; i < pangkat; i++) {
+            hasil *= angka;
+        }
+        return hasil;
+    }
 }
