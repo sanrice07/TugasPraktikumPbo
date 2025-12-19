@@ -4,10 +4,17 @@
  */
 package Tugas9PraktikumPbo;
 
-/**
- *
- * @author ikhsa
- */
+
 public class Produk {
-    
+     protected String judul, penulis;
+
+    public Produk(String judul, String penulis) {
+        this.judul = judul;
+        this.penulis = penulis;
+    }
+
+    public void getInfoProduk() {
+        System.out.println("Judul: " + judul
+                + "\nPenulis: " + penulis);
+    }
 }
